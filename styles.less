@@ -1,0 +1,107 @@
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 50em) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+// Side Nav
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 4em;
+}
+
+.sidenav a {
+    padding: .3125em .3125em .3125em 2em;
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #818181;
+    display: block;
+    transition: 0.7s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: .1em;
+    font-size: 1.5em;
+    margin-left: 3em;
+}
+
+@media screen and (max-height: 30em) {
+  .sidenav {padding-top: 1em;}
+  .sidenav a {font-size: 1em;}
+}
+
+img, video, iframe {
+    border: .1em solid #ddd; /* Gray border */
+    border-radius: .3125px;  /* Rounded border */
+    padding: .3125; /* Some padding */
+    width: 50%;
+    height:auto;
+    @media only screen and (max-width: 40em){
+      width: 75%; //slightly wider
+    }
+    @media only screen and (max-width: 30em){
+      width: 100%; // full width on mobile
+    }
+}
+
+/* Add a hover effect (blue shadow) */
+img:hover {
+    box-shadow: 0 0 .1em .1em rgba(0, 140, 186, 0.5);
+}
+
+.Set-Columns(@numCols){
+    -webkit-column-count: @numCols; /* Chrome, Safari, Opera */
+    -moz-column-count: @numCols; /* Firefox */
+    column-count: @numCols;
+  }
+#welcomepara{
+    @media only screen and (min-width: 30em){
+      .Set-Columns(3);
+    }
+  }
+
+@company-color: red;
+@hilight-color: yellow;
+footer {
+background:yellow;
+font-size: 1em;
+text-align: center;
+color: black;
+}

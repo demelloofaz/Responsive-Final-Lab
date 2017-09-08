@@ -5,65 +5,135 @@
   <title>David's Cycling Page</title>
   <script src= "bower_components\jquery\dist\jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
-  <link rel="stylesheet/less" href = ".\styles.less"/>
+  <link rel="stylesheet/less" href = ".\styles-min.less"/>
   <script src="bower_components\less\dist\less.min.js" charset="UTF-8"></script>
   </head>
   <body>
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <li><a href="index.html">Main</a></li>
-      <li class="active"><a href="Trainers.html">Trainers</a></li>
+      <li><a href="index.html">Why Indoor Cycling?</a></li>
+      <li class="active"><a href="Trainers.html">Trainer Info</a></li>
       <li><a href="Apps.html">Indoor Training Apps</a></li>
-      <li><a href="Basic Maint.html">Simple Maintenance</a></li>
+      <li><a href="Basic Maint.html">Simple Bike Maintenance</a></li>
     </div>
     <span style="font-size:2em;cursor:pointer" onclick="openNav()">&#9776;Menu</span>
+
     <div class="row">
-    <div class="col-12"><h2>A discussion of Indoor Trainers</h2></div>
+    <div class="col-l12  col-m12 col-s12"><h2>A discussion of Indoor Trainers</h2></div>
     </div>
+
     <div class="row">
-    <div class="col-10">
-    <p>
-      Paragraph 1
-    </P>
-    <p>
-      Paragraph 2
-    </p>
-  <img id="image12" src="Images\xxx.jpg"  alt="trainer">
-  <h4>Classic Trainer</h4>
-  <h5><strong>Description:</strong> <br>Cyclops Fluid 2</h5>
-  <img id="image12" src="Images\xxx.jpg"  alt="trainer">
-  <h4>Smart Trainer</h4>
-  <h5><strong>Description:</strong> <br>Wahoo Kickr Snap</h5>
+    <div class="col-l8 col-m8 col-s12">
+       <h3>Trainer Types</h3>
+       <p>
+         There are four main types of bike trainers. Wind, or resistance, trainers are popular for their simplicity,
+         affordability, and durability. Resistance levels increase the harder or faster you pedal. With this type of trainer,
+          your own pedaling powers a fan for resistance. A magnetic trainer offers fixed resistance using magnetic force.
+          Unlike a wind trainer, you can’t change the resistance level by pedaling harder or faster. This type of trainer is
+          ideal for longer, steadier rides. A fluid trainer offers progressive resistance, and the levels will increase the harder
+          and faster you pedal.
+       </p>
+       Roller bike trainers can be deceptive, as they look quite simple. Despite its basic design, this type of roller
+       is challenging as it requires you to stay balanced and upright on your bike. Unlike a typical bike trainer,
+       there is no stand to hold your bike in place. Regardless of which type of bike trainer you choose, you’ll want one
+       that’s sturdy and durable enough to withstand the demands of your indoor training sessions.
+       If you’re up for the challenge, consider these top best bike rollers.
+       <p>
+        Another category of train is the Smart trainer.  These trainers are an increasingly popular option among cyclists who don’t mind spending a bit more for a more
+        technology-filled training session. Whether you want continuous feedback during a ride or are just intrigued by the
+        technology, this type of trainer typically keeps track of your speed, cadence, power, and more. Many of these trainers
+        are either ANT+ compatible, meaning they need a separate dongle to work properly, or Bluetooth-ready.
+        Once your smart trainer is properly set up you can start on a virtual ride to inject a bit more variety and excitement into a typical indoor training ride.
+       </p>
+       <p>
+         For many cyclists, the method of attachment is a primary concern. Some trainers let you directly attach the rear
+         axle and cassette, which replaces the rear wheel of the bike. This option can help save your bike’s tire while providing a smoother
+         connection. However, not every axle or drivetrain is compatible with this type of trainer. Bike trainers with a traditional wheel
+         drive operate by pressing against the rear tire. While this option is typically less expensive than direct mount trainers
+         it can also produce more noise and wear out tires relatively quickly. This can be remedied by a special indorr trainer tire.
+         but will then mean having to change the tire or wheel when wanting to use the bike for outdoor riding.
+       </p>
    </div>
-   <div class="col-2">
-
-
+   <div id="sideList" class="col-l4 col-m4 col-s0">
     <h4>Classic Trainer List</h4>
-
     <ul>
-    <li>Classic Trainer 1</li>
-    <li>Classic Trainer 2</li>
-    <li>Classic Trainer 3</li>
-    <li>Classic Trainer 4</li>
+    <li>CycleOps Fluid 2</li>
+    <li>Blackburn Tech Mag 6</li>
+    <li>Kinetic Rock ANd Roll 2.0</li>
+    <li>CycleOps Magneto</li>
     </ul>
-
     <h4>Smart Trainer List</h4>
     <ul>
-    <li>Smart Trainer 1</li>
-    <li>Smart Trainer 2</li>
-    <li>Smart Trainer 3</li>
-    <li>Smart Trainer 4</li>
-  </ul>
+    <li>Tacx Neo Smart Direct Drive</li>
+    <li>Wahoo Kickr Smart</li>
+    <li>Wahoo Kickr Snap</li>
+    <li>CycleOps Magnus Smart</li>
+    </ul>
+    <h4>Other Indoor Train Accessories</h4>
+    <ul>
+      <li>Fans and/or Air Conditioner</li>
+      <li>Indoor Trainer Tire</li>
+      <li>Frame Sweat Guard (Sweat is corrosive)</li>
+      <li>Trainer Mat</li>
+    </ul>
+    </div>
 </div>
+
+<div class="row">
+   <div class="col-l6 col-m6 col-s12">
+     <img id="TrainerImg" src="Images\cycleops-fluid-2.jpg"  alt="Fuild">
+     <h4>An Example of a fluid trainer</h4>
+   </div>
+   <div class="col-l6 col-m6 col-s12">
+      <img id="TrainerImg" src="Images\Direct Drive Trainer.jpg"  alt="Direct Drive">
+      <h4>An Example of a Direct Drive Trainer</h4>
+   </div>
+ </div>
+ <div class="row">
+   <div class="col-l6 col-m6 col-s12">
+      <img id="TrainerImg" src="Images\OnWheelTrainer.jpg"  alt="On Wheel">
+      <h4>An Example of a Wheel Drive Trainer</h4>
+  </div>
+  <div class="col-l6 col-m6 col-s12">
+     <img id="TrainerImg" src="Images\kickr_snap.jpg"  alt="Smart">
+     <h4>An Example of a Smart Trainer</h4>
+ </div>
 </div>
-    <div class="row">
-      <div class="col-12">
+
+<div class="row">
+  <div id="tips" class="col-s12 col-l0 col-m0">
+    <h4>Classic Trainer List</h4>
+    <ul>
+    <li>CycleOps Fluid 2</li>
+    <li>Blackburn Tech Mag 6</li>
+    <li>Kinetic Rock ANd Roll 2.0</li>
+    <li>CycleOps Magneto</li>
+    </ul>
+    <h4>Smart Trainer List</h4>
+    <ul>
+    <li>Tacx Neo Smart Direct Drive</li>
+    <li>Wahoo Kickr Smart</li>
+    <li>Wahoo Kickr Snap</li>
+    <li>CycleOps Magnus Smart</li>
+    </ul>
+    <h4>Other Indoor Train Accessories</h4>
+    <ul>
+      <li>Fans and/or Air Conditioner</li>
+      <li>Indoor Trainer Tire</li>
+      <li>Frame Sweat Guard (Sweat is corrosive)</li>
+      <li>Trainer Mat</li>
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+   <div class="col-l12 col-m12 col-s12">
       <footer>
         <p class="textcontent">All site contents is copyright</p>
      </footer>
-    </div>
-    </div>
-    <script src="navbar.js"></script>
+  </div>
+</div>
+    <script src="navbar-min.js"></script>
 </body>
 
 </html>

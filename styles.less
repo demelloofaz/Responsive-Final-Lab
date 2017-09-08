@@ -1,31 +1,186 @@
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
+* {
+    box-sizing: border-box;
 }
-[class*="col-"] {
-    float: left;
+.row{
+  width: auto;
+}
+[class*='col-'] {
+  float: left;
+}
+.col-l0 {
+  display: none;
 }
 
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-@media only screen and (max-width: 50em) {
-    /* For mobile phones: */
-    [class*="col-"] {
-        width: 100%;
-    }
+@media( max-width: 50em) {
+  .col-m0 {
+     display: none;
+   }
 }
+@media( max-width: 31.25em) {
+  .col-s0 {
+     display: none;
+   }
+}
+.col-l1 {
+  width: 8.33%;
+}
+
+@media(max-width: 50em) {
+  .col-m1 {
+    width: 8.33%;
+  }
+}
+@media(max-width: 31.25em) {
+  .col-s1 {
+    width: 8.33%;
+  }
+}
+
+.col-l2 {
+  width: 16.66%;
+}
+@media(max-width: 50em) {
+  .col-m2 {
+    width: 16.66%;
+  }
+}
+@media(max-width: 31.25em) {
+  .col-s2 {
+    width: 16.66%;
+  }
+}
+.col-l3 {
+  width: 24.99%;
+}
+
+@media(max-width: 50em) {
+  .col-m3 {
+    width: 24.99%;
+  }
+}
+@media(max-width: 31.25em) {
+  .col-s3 {
+    width: 24.99%;
+  }
+}
+.col-l4 {
+  width: 33.32%;
+}
+@media(max-width: 50em) {
+  .col-m4 {
+    width: 33.32%;
+  }
+}
+@media(max-width: 31.25em) {
+  .col-s4 {
+    width: 33.32%;
+  }
+}
+.col-l5 {
+  width: 41.65%;
+}
+@media(max-width: 50em) {
+  .col-m5 {
+    width: 41.65%;
+  }
+}
+@media(max-width: 31.25em) {
+  .col-s5 {
+    width: 41.65%;
+  }
+}
+.col-l6 {
+  width: 49.98%;
+}
+@media(max-width: 50em) {
+  .col-m6 {
+    width: 49.98%;
+  }
+}
+@media(max-width: 31.25em) {
+  .col-s6 {
+    width: 49.98%;
+  }
+}
+.col-l7 {
+  width: 58.31%;
+}
+@media(max-width: 50em) {
+  .col-m7 {
+    width: 58.31%;
+  }
+}
+@media(max-width: 31.25em) {
+  .col-s7 {
+    width: 58.31%;
+  }
+}
+.col-l8 {
+  width: 66.64%;
+}
+@media(max-width: 50em) {
+  .col-m8 {
+    width: 66.64%;
+  }
+}
+@media(max-width: 31.25em) {
+  .col-s8 {
+    width: 66.64%;
+  }
+}
+.col-l19 {
+  width: 74.97%;
+}
+@media(max-width: 50em) {
+  .col-m9 {
+    width: 74.97%;
+  }
+}
+@media(max-width: 31.25em) {
+  .col-s9 {
+    width: 74.97%;
+  }
+}
+.col-l10 {
+  width: 83.30%;
+}
+@media(max-width: 50em) {
+  .col-m10 {
+    width: 83.30%;
+  }
+}
+@media(max-width: 31.25em) {
+  .col-s10 {
+    width: 83.30%;
+  }
+}
+.col-l11 {
+  width: 91.63%;
+}
+@media(max-width: 50em) {
+  .col-m11 {
+    width: 91.63%;
+  }
+}
+@media(max-width: 31.25em) {
+  .col-s11 {
+    width: 91.63%;
+  }
+}
+.col-l12 {
+  width: 100%;
+}
+@media(max-width: 50em) {
+  .col-m12 {
+    width: 100%;
+  }
+}
+@media(max-width: 31.25em) {
+  .col-s12 {
+    width: 100%;
+  }
+}
+
 
 // Side Nav
 .sidenav {
@@ -66,20 +221,37 @@
   .sidenav {padding-top: 1em;}
   .sidenav a {font-size: 1em;}
 }
-
-img, video, iframe {
+video, iframe {
     border: .1em solid #ddd; /* Gray border */
-    border-radius: .3125px;  /* Rounded border */
-    padding: .3125; /* Some padding */
-    width: 50%;
+    border-radius: .3125em;  /* Rounded border */
+    padding: .3125em; /* Some padding */
+    width: 80%;
     height:auto;
-    @media only screen and (max-width: 40em){
-      width: 75%; //slightly wider
+    margin: .5em;
+    @media only screen and (max-width: 50em){
+      width: 90%; //slightly wider
     }
-    @media only screen and (max-width: 30em){
+    @media only screen and (max-width: 31.25em){
       width: 100%; // full width on mobile
     }
 }
+
+
+img{
+    max-width: 20em;
+    height: 15em;
+    border: .03em solid blue;
+    box-sizing: content-box;
+    @media only screen and (max-width: 50em){
+      max-width: 13em;
+      height: 10em;
+    }
+    @media only screen and (max-width: 31.25em){
+      width: 100%; // full width on mobile
+    }
+}
+
+
 
 /* Add a hover effect (blue shadow) */
 img:hover {
@@ -92,10 +264,25 @@ img:hover {
     column-count: @numCols;
   }
 #welcomepara{
-    @media only screen and (min-width: 30em){
+    @media only screen and (max-width: 31.25em){
       .Set-Columns(3);
     }
   }
+
+p {
+  padding: .5 em;
+}
+#links {
+background-color: Gainsboro;
+}
+
+#tips {
+background-color: NavajoWhite;
+}
+
+#sideList {
+background-color: PowderBlue;
+}
 
 @company-color: red;
 @hilight-color: yellow;

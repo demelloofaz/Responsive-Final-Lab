@@ -5,47 +5,95 @@
   <title>David's Cycling Page</title>
   <script src= "bower_components\jquery\dist\jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
-  <link rel="stylesheet/less" href = ".\styles.less"/>
+  <link rel="stylesheet/less" href = ".\styles-min.less"/>
   <script src="bower_components\less\dist\less.min.js" charset="UTF-8"></script>
   </head>
   <body>
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <li><a href="index.html">Main</a></li>
-      <li><a href="Trainers.html">Trainers</a></li>
+      <li><a href="index.html">Why Indoor Cycling?</a></li>
+      <li><a href="Trainers.html">Trainer Info</a></li>
       <li class="active"><a href="Apps.html">Indoor Training Apps</a></li>
-      <li><a href="Basic Maint.html">Simple Maintenance</a></li>
+      <li><a href="Basic Maint.html">Simple Bike Maintenance</a></li>
     </div>
     <span style="font-size:2em;cursor:pointer" onclick="openNav()">&#9776;Menu</span>
     <div class="row">
     <div class="col-12"><h2>A discussion of Indoor Trainer Applications</h2></div>
     </div>
     <div class="row">
-    <div class="col-10">
-    <p>
-      Paragraph 1
-    </P>
-    <p>
-      Paragraph 2
-    </p>
+
+       <div class="col-l8 col-m8 col-s12">
+       <p>
+         For any cyclist, if you are serious about your goals you will eventually find yourself riding indoors on your bike trainer.
+         Thankfully, there are now many apps that make your time on the trainer more productive and entertaining. Additionally,
+         these apps record your workout so you can analyze your effort. Here is a list of apps and a description of how they
+         function to help you decide which is best for you. Plus, each one also uploads your training automatically to your
+         favorite cycling activity tracker be it TrainingPeaks or Strava.
+       </P>
+       <h4>Zwift</h4>
+       <p>
+         From friendly competition to casual group rides and structured training programs, Zwift is building a community
+         of like-minded athletes united in the pursuit of a better experience.  Athletes from around the globe can ride
+         with each other in rich, 3D-generated worlds simply by connecting their existing devices
+         (e.g. trainers, power meters, heart rate monitors, etc) wirelessly via open industry standard ANT+. ZWO files
+         exported from your TrainingPeaks account can be imported into Zwift. Zwift is best if you are looking to compete
+         against your friends in real-time on virtual group rides.
+       </p>
+       <h4>Trainer Road</h4>
+       <p>
+       TrainerRoad is available for iOS, Mac, and PC and connects to your ANT+ or Bluetooth Smart devices to measure your power,
+       speed and other metrics. It then uses that data to customize workouts to your personal fitness level. You can train with a
+       power meter, smart trainer, or use TrainerRoad’s own VirtualPower® feature—all you need is a speed sensor and supported trainer.
+       TrainerRoad features a 30-day money back guarantee if you are not satisfied with their product.
+       </p>
+       <h4>The Sufferfest App</h4>
+       <p>
+         The Sufferfest is more than just training videos. Their new app for iOS, Windows, and Mac OSX  gives you unlimited
+         streaming or offline access to their full library of 40 cycling, triathlon and running videos, as well as 20 Yoga for
+         Cyclists videos. Connection to heart rate, power, cadence, and speed sensors through either ANT+ or Bluetooth 4.0 allows
+         you to capture detailed workout data and share it instantly to TrainingPeaks or Strava. There is a 7-day free trial, after which
+         subscriptions are $10/month or $99/year.
+       </p>
+      </div>
+      <div id="links" class="col-l4 col-m6 col-s12">
+       <h4>Application links</h4>
+       <ul>
+       <li><a href="https://zwift.com">Zwift</a></li>
+       <li><a href="https://www.Trainerroad.com">Trainer Road</a></li>
+       <li><a href="https://thesufferfest.com">The Sufferfest App</a></li>
+       </ul>
+      </div>
+</div>
+<div class="row">
+   <div class="col-l6 col-m6 col-s12">
+     <img id="AppImg" src="Images\ZwiftEx.jpg"  alt="Zwift">
+     <h4>A screen shot from Zwift</h4>
    </div>
-   <div class="col-2">
-    <h4>Recommended Trainer Application Links</h4>
-    <ul>
-    <li>Zwift</li>
-    <li>Trainer Road</li>
-    <li>Sufferfest</li>
-    </ul>
+   <div class="col-l6 col-m6 col-s12">
+      <img id="AppImg" src="Images\TrainerRoadEx.jpg"  alt="Trainer Road">
+      <h4>A Screen shot of Trainer Road</h4>
+   </div>
+ </div>
+
+ <div class="row">
+   <div class="col-l6 col-m6 col-s12">
+      <img id="AppImage" src="Images\SufferFestEx1.jpg"  alt="SufferFest Workout">
+      <h4>Screen shot of a Sufferfest workout</h4>
+  </div>
+  <div class="col-l6 col-m6 col-s12">
+     <img id="AppImg" src="Images\SufferFestEx2.jpg"  alt="Sufferfest Ride">
+     <h4>Screen shot of Sufferfest ride</h4>
+ </div>
 </div>
 </div>
     <div class="row">
-      <div class="col-12">
+      <div class="col-l12 col-m12 col-s12">
       <footer>
         <p class="textcontent">All site contents is copyright</p>
      </footer>
     </div>
     </div>
-    <script src="navbar.js"></script>
+    <script src="navbar-min.js"></script>
 </body>
 
 </html>
